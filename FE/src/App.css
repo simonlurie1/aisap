@@ -1,0 +1,81 @@
+.emptyResults {
+  color: gray;
+}
+
+.label{
+  color: black;
+}
+
+.value {
+  color: #787676;
+  margin-left: 4px;
+}
+
+.personalIps{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+input[type="text"] {
+  height: 21px;
+  border-radius: 4px;
+  padding: 4px;
+  border: 1px solid #787676;
+  margin-right: 20px;
+  width: 300px;
+}
+
+button[type="submit"] {
+  height: 31px;
+  background-color: #4096ff;
+  padding: 4px 10px;
+  color:white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #0958d9;
+}
+
+.errorText{
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.resultsWrapper {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #787676;
+}
+
+.resultsList{
+  display: flex;
+  gap: 50px;
+}
+
+.history {
+  margin-top: 30px;
+}
+
+.history ul{
+  list-style: decimal;
+
+}
+
+header {
+  display: flex;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #E4E9EC;
+  align-items: center;
+  box-shadow: 0 0 12px 8px hsla(220, 25%, 80%, 0.2);
+  font-size: 22px;
+}
+
+main {
+  padding: 20px;
+}
