@@ -3,13 +3,11 @@ import './App.css';
 import HostInfo from './components/HostInfo';
 import DomainLookup from './components/DomainLookup';
 import LookupHistory from './components/LookupHistory';
-import { DomainLookupResponse } from './components/types';
 
 const App = () => {
   const [hostInfo, setHostInfo] = useState({ internal_ip: 'Loading...', public_ip: 'Loading...' });
   const [history, setHistory] = useState([]);
 
-  // Fetch host info and history on component mount
   useEffect(() => {
     fetchHostInfo();
     fetchHistory();
@@ -43,7 +41,6 @@ const App = () => {
       );
       const data = await response.json();
 
-      // Refresh history after a successful lookup
       fetchHistory();
 
       return data;

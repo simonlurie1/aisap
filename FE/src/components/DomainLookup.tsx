@@ -11,7 +11,9 @@ const DomainLookup: react.FC<Props> = ({ onLookup }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const handleSubmit = async () => {
+  const handleSubmit = async e => {
+    e.preventDefault();
+
     if (!domain.trim()) {
       setError('Please enter a domain');
       return;
