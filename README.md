@@ -1,12 +1,13 @@
-# Getting Started with Create React App
+# simon lurie
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+open cmd in FE folder
+and run:
+### npm install
 
-## Available Scripts
-
-In the project directory, you can run:
- 
+start docker desktop
+and run the command on the main folder:
 ### 'docker-compose up --build'
+
 It will install BE and FE folders.
 You can open the browser http://localhost:3000/.
 

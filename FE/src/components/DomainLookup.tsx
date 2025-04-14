@@ -1,15 +1,17 @@
-import { useState } from 'react';
+import react, { useState } from 'react';
 import { DomainLookupResponse } from './types';
 
-const DomainLookup = ({ onLookup }) => {
+interface Props {
+  onLookup: (text: string) => any;
+}
+
+const DomainLookup: react.FC<Props> = ({ onLookup }) => {
   const [domain, setDomain] = useState('');
   const [result, setResult] = useState<DomainLookupResponse | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const handleSubmit = async e => {
-    e.preventDefault();
-
+  const handleSubmit = async () => {
     if (!domain.trim()) {
       setError('Please enter a domain');
       return;

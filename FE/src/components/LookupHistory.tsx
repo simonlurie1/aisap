@@ -1,4 +1,11 @@
-const LookupHistory = ({ history }) => {
+import react from 'react';
+import { DomainLookupResponse } from './types';
+
+interface Props {
+  history: DomainLookupResponse[];
+}
+
+const LookupHistory: react.FC<Props> = ({ history }) => {
   if (!history || history.length === 0) {
     return (
       <div>

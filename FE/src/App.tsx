@@ -3,6 +3,7 @@ import './App.css';
 import HostInfo from './components/HostInfo';
 import DomainLookup from './components/DomainLookup';
 import LookupHistory from './components/LookupHistory';
+import { DomainLookupResponse } from './components/types';
 
 const App = () => {
   const [hostInfo, setHostInfo] = useState({ internal_ip: 'Loading...', public_ip: 'Loading...' });
@@ -35,7 +36,7 @@ const App = () => {
     }
   };
 
-  const handleLookup = async domain => {
+  const handleLookup = async (domain: string) => {
     try {
       const response = await fetch(
         `http://localhost:8000/api/lookup/${encodeURIComponent(domain)}`,
