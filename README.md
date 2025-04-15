@@ -13,6 +13,3 @@ You can access the frontend at: http://localhost:3000
 
 To verify the backend is running, visit: http://localhost:8000/docs
 This page provides the Swagger documentation for the API.
-
-You can verify that the backend is running by visiting http://localhost:8000/docs, 
-where you can view the Swagger documentation.
