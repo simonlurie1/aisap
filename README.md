@@ -1,15 +1,18 @@
 # simon lurie
 
-open cmd in FE folder
+open a terminal in FE folder
 and run:
 ### npm install
 
-start docker desktop
-and run the command on the main folder:
+Then, start Docker Desktop 
+and run the following command from the main project folder:
 ### 'docker-compose up --build'
 
-It will install BE and FE folders.
-You can open the browser http://localhost:3000/.
+This will build and start both the backend and frontend services.
+You can access the frontend at: http://localhost:3000
+
+To verify the backend is running, visit: http://localhost:8000/docs
+This page provides the Swagger documentation for the API.
 
 You can verify that the backend is running by visiting http://localhost:8000/docs, 
 where you can view the Swagger documentation.
